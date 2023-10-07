@@ -4,9 +4,9 @@ Author：songqiuyu
 QQ：731499511
 
 ### my schedule
-* [X] Getting Started 
-* [X] Verilog Language
-* [X] Combinational Logic
-* [X] Sequential Logic
-* [ ] Reading Simulations
-* [ ] Writing Testbenches
+* [X] 1 - Getting Started 
+* [X] 2 - Verilog Language
+* [X] 3 - Combinational Logic
+* [X] 4 - Sequential Logic
+* [ ] 5 - Reading Simulations
+* [ ] 6 - Writing Testbenches
