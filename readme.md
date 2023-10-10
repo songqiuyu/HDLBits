@@ -9,8 +9,8 @@ QQ：731499511
 * [X] 3 - Combinational Logic
 * [X] 4 - Sequential Logic
   * [X] 1 - Latches and Flip-Flops
-  * [ ] 2 - Counters
-  * [ ] 3 - Shift Register
+  * [X] 2 - Counters
+  * [X] 3 - Shift Register
   * [ ] 4 - More Circuits
   * [ ] 5 - Finite State Machines
   * [ ] 6 - Building Larger Circuits
