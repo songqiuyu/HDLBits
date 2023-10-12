@@ -11,7 +11,7 @@ QQ：731499511
   * [X] 1 - Latches and Flip-Flops
   * [X] 2 - Counters
   * [X] 3 - Shift Register
-  * [ ] 4 - More Circuits
+  * [X] 4 - More Circuits
   * [ ] 5 - Finite State Machines
   * [ ] 6 - Building Larger Circuits
 * [ ] 5 - Reading Simulations
