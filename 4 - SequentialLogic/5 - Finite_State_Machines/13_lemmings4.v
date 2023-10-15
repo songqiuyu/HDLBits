@@ -8,11 +8,11 @@ module top_module(
     output walk_left,
     output walk_right,
     output aaah,
-    output digging); 
+    output digging ); 
 
     reg [2:0]y, Y;
     parameter A=3'b000, B=3'b001, C=3'b010, D=3'b011, E=3'b100, F=3'b101;
-    reg [4:0] splatter = 5'b00000;
+    reg [7:0]cnt;
     reg dead;
 
     always@(*)begin
@@ -50,16 +50,12 @@ module top_module(
 
             C:begin
                 if(ground) Y <= A;
-                else begin
-                    Y <= C;
-                end
+                else Y <= C;
             end
 
             D:begin
                 if(ground)  Y <= B;
-                else begin
-                    Y <= D;
-                end
+                else Y <= D;
             end
 
             E:begin
@@ -77,24 +73,27 @@ module top_module(
     always@(posedge clk, posedge areset)begin
         if(areset)begin
             y <= A;
-            splatter <= 0;
+            cnt <= 0;
             dead <= 0;
         end
-        else begin      //else的begin end问题！
-            if((y == C | y == D) & (Y == C | Y == D))
-                splatter <= splatter + 1;
-            else if(splatter <= 19)
-                splatter <= 0;
-            if(splatter > 19 && Y != C && Y != D)
-                dead <= 1;
+        else begin
+            if ((y == C | y == D) && (Y != C) && (Y != D) && cnt >= 20)begin
+                dead = 1;
+            end
+            else if((y == C | y == D) && (Y == C | Y == D))begin
+                cnt <= cnt + 1;
+            end
+            else begin
+                cnt <= 0;
+            end
+
             y <= Y;
-		end
+        end
     end
 
-    assign walk_left = (y == A) && !dead;
-    assign walk_right = (y == B) && !dead;
-    assign aaah = (y == C | y == D) && !dead;
-    assign digging = (y == E | y == F) && !dead;
-
+    assign walk_left = (y == A) && (!dead);
+    assign walk_right = (y == B) && (!dead);
+    assign aaah = (y == C | y == D) && (!dead);
+    assign digging = (y == E | y == F) && (!dead);
 
 endmodule
