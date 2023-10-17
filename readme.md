@@ -12,7 +12,7 @@ QQ：731499511
   * [X] 2 - Counters
   * [X] 3 - Shift Register
   * [X] 4 - More Circuits
-  * [ ] 5 - Finite State Machines
+  * [X] 5 - Finite State Machines
   * [ ] 6 - Building Larger Circuits
 * [ ] 5 - Reading Simulations
 * [ ] 6 - Writing Testbenches
