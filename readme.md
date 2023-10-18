@@ -13,6 +13,9 @@ QQ：731499511
   * [X] 3 - Shift Register
   * [X] 4 - More Circuits
   * [X] 5 - Finite State Machines
-  * [ ] 6 - Building Larger Circuits
+  * [X] 6 - Building Larger Circuits
 * [ ] 5 - Reading Simulations
+  * [ ] 1 - Finding bugs in code
+  * [ ] 2 - Build a circuit from a simulation waveform
+  * [ ] 3 - Verification: Writing Testbenches
 * [ ] 6 - Writing Testbenches
