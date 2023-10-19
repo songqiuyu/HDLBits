@@ -4,6 +4,8 @@ module top_module (
     input [7:0] b,
     output [7:0] out  ); 
 
-    assign out = ({8{~sel}} & a) | ({8{~sel}} & b);
+
+    assign out = sel ? a : b;
+    // !表示逻辑非，~表示按位求反
 
 endmodule

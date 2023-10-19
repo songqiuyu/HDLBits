@@ -15,7 +15,7 @@ QQ：731499511
   * [X] 5 - Finite State Machines
   * [X] 6 - Building Larger Circuits
 * [ ] 5 - Reading Simulations
-  * [ ] 1 - Finding bugs in code
-  * [ ] 2 - Build a circuit from a simulation waveform
+  * [X] 1 - Finding bugs in code
+  * [X] 2 - Build a circuit from a simulation waveform
   * [ ] 3 - Verification: Writing Testbenches
 * [ ] 6 - Writing Testbenches
