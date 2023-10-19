@@ -14,8 +14,9 @@ QQ：731499511
   * [X] 4 - More Circuits
   * [X] 5 - Finite State Machines
   * [X] 6 - Building Larger Circuits
-* [ ] 5 - Reading Simulations
+* [X] 5 - Reading Simulations
   * [X] 1 - Finding bugs in code
   * [X] 2 - Build a circuit from a simulation waveform
-  * [ ] 3 - Verification: Writing Testbenches
-* [ ] 6 - Writing Testbenches
+  * [X] 3 - Verification: Writing Testbenches
+* [X] 6 - Writing Testbenches
+* [X] 7 - CS450
